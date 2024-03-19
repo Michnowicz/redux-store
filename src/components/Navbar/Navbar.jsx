@@ -5,6 +5,10 @@ export default function Navbar() {
     
     const navigate = useNavigate()
 
+    const handleNav = (e) => {
+        navigate(`/${e.target.innerText.toLowerCase()}`)
+    }
+
     return(
         <div className="Navbar">
             {/* <div className="logo">
@@ -12,13 +16,13 @@ export default function Navbar() {
             </div> */}
 
             <div className="links">
-                <div onClick={()=>(navigate("/"))}>PRODUCTS</div>
-                <div onClick={()=>(navigate("/"))}>GUITAR</div>
-                <div onClick={()=>(navigate("/"))}>STRING</div>
-                <div onClick={()=>(navigate("/"))}>PEDAL</div>
-                <div onClick={()=>(navigate("/"))}>AMP</div>
-                <div onClick={()=>(navigate("/"))}>TUNER</div>
-                <div onClick={()=>(navigate("/login"))}>LOG IN</div>
+                <div onClick={handleNav}>PRODUCTS</div>
+                <div onClick={handleNav}>GUITAR</div>
+                <div onClick={handleNav}>STRING</div>
+                <div onClick={handleNav}>PEDAL</div>
+                <div onClick={handleNav}>AMP</div>
+                <div onClick={handleNav}>TUNER</div>
+                <div onClick={handleNav}>LOGIN</div>
             </div>
 
             {/* <div className="burgerButton">

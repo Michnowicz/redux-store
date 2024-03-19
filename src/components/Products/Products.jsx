@@ -1,6 +1,7 @@
 import "./Products.css"
 import Navbar from "../Navbar/Navbar"
-import Data from "../../data/products.json"
+import Datas from "../Datas/Datas"
+
 import { useState } from "react"
 
 export default function Products() {
@@ -13,24 +14,9 @@ export default function Products() {
 
             <div className="container">
                 
-                <input type="text" placeholder="search by name" onChange={(e) => (setSearch(e.target.value))}/>
+                <input className="searchBar" type="text" placeholder="search by name" onChange={(e) => (setSearch(e.target.value.toLowerCase()))}/>
 
-                <div className="datas">
-                    {
-                        Data.filter((d => d.name.toLowerCase().includes(search))).map((d,i)=>(
-                            <div key={i} className="data">
-                                <div className="imageDiv">
-                                    <img src={d.image} alt="" />
-                                </div>
-                                <div className="textDiv">
-                                    <p><b>title : </b>{d.name}</p>
-                                    {/* <p><b>price : </b>{d.price} €</p> */}
-                                    <button className="addCartBtn">{d.price} €</button>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
+                <Datas search={search}/>
             </div>
         </div>
     )

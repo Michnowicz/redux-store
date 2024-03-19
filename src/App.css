@@ -6,6 +6,10 @@ button {
     cursor: pointer;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 .supraContainer {
     min-height: 100vh;
@@ -26,4 +30,34 @@ button {
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+
+
+
+/*///////////////////// Button to add to cart /////////////////////*/
+.addCartBtn {
+    width: 120px;
+    font-size: 1rem;
+    padding: 8px 0px 8px 0px;
+    color: #1c1c1c;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #1c1c1c;
+    border-radius: 6px;
+}
+.addCartBtn:active {
+    background-color: #1c1c1c2c;
+    outline: none;
+}
+.addCartBtn:focus {
+    outline: none
+}
+
+/*///////////////////// Searchbar /////////////////////*/
+.searchBar {
+    font-size: 1rem;
+    padding: 8px 10px 8px 10px;
+    color: #1c1c1c;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #1c1c1c;
+    border-radius: 6px;
 }
