@@ -12,7 +12,8 @@ export const loginSlice = createSlice({
         },
         cart: {
 
-        }
+        },
+        location: 'amp',
     },
     reducers: {
         addMail: (state, action) => {
@@ -25,11 +26,14 @@ export const loginSlice = createSlice({
             if (state.connection.mail == state.connection.user[0] && state.connection.password == state.connection.user[1]) {
                 state.connection.flag = true
             }
+        },
+        handleLocation: (state, action) => {
+            state.location = action.payload
         }
     }
 })
 
 // Action creators are generated for each case reducer function
-export const { addMail, addPassword, handleConnection } = loginSlice.actions
+export const { addMail, addPassword, handleConnection, handleLocation, } = loginSlice.actions
 
 export default loginSlice.reducer

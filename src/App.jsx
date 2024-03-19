@@ -10,6 +10,8 @@ import { useSelector } from 'react-redux';
 
 function App() {
 
+  
+
   const pages = createBrowserRouter([
     {
       path:"/",
@@ -22,6 +24,10 @@ function App() {
     {
       path:"/login",
       element: <Login/>
+    },
+    {
+      path:"/:location",
+      element: <Products/>
     },
 
   ])
