@@ -1,0 +1,14 @@
+
+.Loged {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #00132D;
+}
+
+.Loged h1 {
+    color: white;
+    text-align: center;
+}

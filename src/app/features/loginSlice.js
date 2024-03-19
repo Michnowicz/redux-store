@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { useNavigate } from 'react-router-dom'
 
 export const loginSlice = createSlice({
     name: 'login',
@@ -6,21 +7,37 @@ export const loginSlice = createSlice({
         connection: {
             mail:"",
             password:"",
-            user: ["dummy","test"],
-            connected:false
+            user: ["dummy","test"],  /* user mail and password */
+            flag: false,
         },
         cart: {
-            
+
         }
     },
     reducers: {
-        increment: (state) => {
-        state.value += 1
+        addMail: (state, action) => {
+            state.connection.mail = action.payload
+        },
+        addPassword: (state, action) => {
+            state.connection.password = action.payload
+        },
+        handleConnection: (state) => {
+            if (state.connection.mail == state.connection.user[0] && state.connection.password == state.connection.user[1]) {
+                state.connection.flag = true
+            }
+
+            // console.log(state.connection.user[0]);
+            // if (state.connection.mail == state.connection.user[0]) {
+            //     console.log("ok mail");
+            // }
+            // if (state.connection.password == state.connection.user[1]) {
+            //     console.log("ok password");
+            // }
         }
-    },
+    }
 })
 
 // Action creators are generated for each case reducer function
-export const { increment } = loginSlice.actions
+export const { addMail, addPassword, handleConnection } = loginSlice.actions
 
 export default loginSlice.reducer

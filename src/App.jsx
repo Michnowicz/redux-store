@@ -1,7 +1,9 @@
 import './App.css'
-import { RouterProvider, createBrowserRouter, useNavigate  } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import Login from './components/Login/Login';
+import Loged from './components/Loged/Loged';
+
 
 function App() {
 
@@ -10,6 +12,11 @@ function App() {
       path:"/",
       element: <Login/>
     },
+    {
+      path:"/loged",
+      element: <Loged/>
+    },
+
   ])
 
   return (

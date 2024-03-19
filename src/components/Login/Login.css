@@ -44,3 +44,7 @@
     border: 2px solid #00377E;
     border-radius: 20px;
 }
+.Login button:active {
+    background-color: #082957;
+    outline: none;
+}
