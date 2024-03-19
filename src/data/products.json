@@ -1,188 +1,213 @@
 [
     {
+        "id": "G01",
         "name": "Strandberg Plini edtition",
         "price": 2899.99,
         "quantity": 3,
-        "image": "./",
+        "image": "/public/image/guitar/strandberg-plini.jpg",
         "category": "guitar"
     },
     {
+        "id": "G02",
         "name": "Epiphone Noel Gallagher Riviera",
         "price": 910.99,
         "quantity": 4,
-        "image": "./",
+        "image": "/public/image/guitar/Epiphone-Noel-Gallagher-Riviera.jpg",
         "category": "guitar"
     },
     {
+        "id": "G03",
         "name": "Yamaha Revstar Charcoal",
         "price": 1899.00,
         "quantity": 2,
-        "image": "./",
+        "image": "/public/image/guitar/yamaha-revstar.jpg",
         "category": "guitar"
     },
     {
+        "id": "G04",
         "name": "Gretsch-G5422TG",
         "price": 799,
         "quantity": 5,
-        "image": "./",
+        "image": "/public/image/guitar/Gretsch-G5422TG.jpg",
         "category": "guitar"
     },
     {
+        "id": "G05",
         "name": "Fender Tom Delonge",
         "price": 599,
         "quantity": 5,
-        "image": "./",
+        "image": "/public/image/guitar/fender-tom-delonge.jpg",
         "category": "guitar"
     },
 
 
     {
+        "id": "S01",
         "name": "D'addario NYXL",
         "price": 17.99,
         "quantity": 20,
-        "image": "./",
+        "image": "/public/image/strings/Daddario-NYXL.jpg",
         "category": "string"
     },
     {
-        "name": "D'addario pro steel XL",
+        "id": "S02",
+        "name": "Elixir Light 10-46",
         "price": 11.90,
         "quantity": 20,
-        "image": "./",
+        "image": "/public/image/strings/elixir.jpg",
         "category": "string"
     },
     {
+        "id": "S03",
         "name": "Ernie Ball light auge Flat",
         "price": 7.20,
         "quantity": 15,
-        "image": "./",
+        "image": "/public/image/strings/EBF.png",
         "category": "string"
     },
     {
+        "id": "S04",
         "name": "Harley Benton 11-52",
         "price": 5.00,
         "quantity": 33,
-        "image": "./",
+        "image": "/public/image/strings/HB.jpg",
         "category": "string"
     },
     {
+        "id": "S05",
         "name": "elixir 10-46",
         "price": 12.70,
         "quantity": 12,
-        "image": "./",
+        "image": "/public/image/strings/elixir.jpg",
         "category": "string"
     },
 
 
 
     {
+        "id": "P01",
         "name": "Boss mega distortion MD-2",
         "price": 110.80,
         "quantity": 10,
-        "image": "./",
+        "image": "/public/image/pedal/Boss-disto.jpg",
         "category": "pedal"
     },
     {
+        "id": "P02",
         "name": "Sub Zero Deep Freeze",
         "price": 23.99,
         "quantity": 12,
-        "image": "./",
+        "image": "/public/image/pedal/SZ-DF.jpg",
         "category": "pedal"
     },
     {
+        "id": "P03",
         "name": "Behringer ultra chorus UC200",
         "price": 28.45,
         "quantity": 6,
-        "image": "./",
+        "image": "/public/image/pedal/behringer-chorus.jpg",
         "category": "pedal"
     },
     {
+        "id": "P04",
         "name": "TC Electronic Drip Spring Reverb",
         "price": 80.30,
         "quantity": 4,
-        "image": "./",
+        "image": "/public/image/pedal/TC-drip.jpg",
         "category": "pedal"
     },
     {
+        "id": "P05",
         "name": "Boss RC-505MKII Loop Station",
         "price": 587.00,
         "quantity": 4,
-        "image": "./",
+        "image": "./public/image/pedal/boss-looper.jpg",
         "category": "pedal"
     },
 
 
 
     {
+        "id": "T01",
         "name": "Mooer Baby",
         "price": 60.00,
         "quantity": 10,
-        "image": "./",
+        "image": "/public/image/tuner/Mooer-Baby-Tuner.jpg",
         "category": "tuner"
     },
     {
+        "id": "T02",
         "name": "Boss TU-30",
         "price": 24.30,
         "quantity": 23,
-        "image": "./",
+        "image": "/public/image/tuner/Boss TU-30.jpg",
         "category": "tuner"
     },
     {
+        "id": "T03",
         "name": "Clip HT-15",
         "price": 5.89,
         "quantity": 45,
-        "image": "./",
+        "image": "/public/image/tuner/ht-15.jpg",
         "category": "tuner"
     },
     {
+        "id": "T04",
         "name": "Korg CA-2",
         "price": 14.13,
         "quantity": 40,
-        "image": "./",
+        "image": "/public/image/tuner/korg-CA2.jpg",
         "category": "tuner"
     },
     {
+        "id": "T05",
         "name": "Snark SN5X Clip-On",
         "price": 21.22,
         "quantity": 26,
-        "image": "./",
+        "image": "/public/image/tuner/Snark-SN5X.jpg",
         "category": "tuner"
     },
 
 
 
     {
+        "id": "A01",
         "name": "Boss Katana mini-amp",
         "price":  96.59,
         "quantity": 20,
-        "image": "./",
+        "image": "/public/image/amp/Boss-Katana.jpg",
         "category": "amp"
     },
     {
+        "id": "A02",
         "name": "Fender Mustang LT25",
         "price": 192.25,
         "quantity": 6,
-        "image": "./",
+        "image": "/public/image/amp/Fender-LT25.jpg",
         "category": "amp"
     },
     {
+        "id": "A03",
         "name": "Blackstar Debut 50R",
         "price": 226.75,
         "quantity": 9,
-        "image": "./",
+        "image": "/public/image/amp/blackstar.jpg",
         "category": "amp"
     },
     {
+        "id": "A04",
         "name": "EVH 5150 III",
         "price": 589.00,
         "quantity": 3,
-        "image": "./",
+        "image": "/public/image/amp/EVH-5150-III.jpg",
         "category": "amp"
     },
     {
+        "id": "A05",
         "name": "Line 6 Spider V 20 MkII ",
         "price": 196.00,
         "quantity": 17,
-        "image": "./",
+        "image": "/public/image/amp/Line-6.jpg",
         "category": "amp"
     }
 ]

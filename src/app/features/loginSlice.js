@@ -25,14 +25,6 @@ export const loginSlice = createSlice({
             if (state.connection.mail == state.connection.user[0] && state.connection.password == state.connection.user[1]) {
                 state.connection.flag = true
             }
-
-            // console.log(state.connection.user[0]);
-            // if (state.connection.mail == state.connection.user[0]) {
-            //     console.log("ok mail");
-            // }
-            // if (state.connection.password == state.connection.user[1]) {
-            //     console.log("ok password");
-            // }
         }
     }
 })

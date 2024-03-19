@@ -1,0 +1,37 @@
+
+
+.Navbar {
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+
+
+.burgerButton i {
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Navbar .links {
+    /* position: absolute; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.Navbar .links div {
+    cursor: pointer;
+}

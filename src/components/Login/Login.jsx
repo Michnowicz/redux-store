@@ -1,4 +1,5 @@
 import "./Login.css"
+import Navbar from "../Navbar/Navbar"
 
 import { useSelector, useDispatch } from 'react-redux'
 import { addMail, addPassword, handleConnection } from "../../app/features/loginSlice"
@@ -21,15 +22,17 @@ export default function Login() {
     //     connected: ${login.flag} \n`);
     // },[login])
 
-    useEffect(()=>{
+    const handleNav = () => {
+        dispatch(handleConnection())
         if (login.flag == true) {
             navigate("/loged")
         }
-    },[login.flag])
+    }
 
     return(
         <div className="Login supraContainer">
-            <div>
+            <Navbar/>
+            <div className="container">
                 <h1>Log in</h1>
 
                 <div>
@@ -38,7 +41,7 @@ export default function Login() {
                 </div>
 
                 <div>
-                    <button onClick={()=>(dispatch(handleConnection()))}>LOGIN</button>
+                    <button onClick={handleNav}>LOGIN</button>
                 </div>
             </div>
         </div>
