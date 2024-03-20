@@ -13,7 +13,7 @@ export const loginSlice = createSlice({
         cart: {
 
         },
-        location: 'amp',
+        location: '',
     },
     reducers: {
         addMail: (state, action) => {

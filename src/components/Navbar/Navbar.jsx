@@ -8,7 +8,7 @@ export default function Navbar() {
     
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const location = useSelector((state) => state.location)
+    const test = useSelector((state) => state.login.connection.flag)
 
     // useEffect(()=>{
     //     console.log(location);
@@ -32,7 +32,11 @@ export default function Navbar() {
                 <div id='pedal' onClick={handleNav}>PEDAL</div>
                 <div id='amp' onClick={handleNav}>AMP</div>
                 <div id='tuner' onClick={handleNav}>TUNER</div>
-                <div id='login' onClick={handleNav}>LOG IN</div>
+                <div id="log">
+                    <div>{test == false ? "" : "Loged"}</div>
+                    <div id='login' onClick={handleNav}>LOG IN</div>
+                </div>
+                
             </div>
 
             {/* <div className="burgerButton">

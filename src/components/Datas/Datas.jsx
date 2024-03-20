@@ -12,10 +12,14 @@ export default function Datas({location}) {
     const [filtered, setFiltered] = useState([])
 
     useEffect(() => {
-        if (location != 'products') {
+        console.log(location);
+        if (location != 'products' || location != undefined) {
             const newFiltered = Data.filter(d => d.category == location)
             setFiltered(newFiltered)
         } else {
+            const newFiltered = Data.map((d,i)=>{
+                return d
+            })
             setFiltered(Data)
         }
         
@@ -29,7 +33,7 @@ export default function Datas({location}) {
 
             <div className="datas">
                 {
-                    filtered.filter((d => d.name.toLowerCase().includes(search))).map((d,i)=>(
+                    (location == 'products' ? Data : location == undefined ? Data : filtered).filter((d => d.name.toLowerCase().includes(search))).map((d,i)=>(
                         <div key={i} className="data">
                             <div className="imageDiv">
                                 <img src={d.image} alt=""/>

@@ -20,7 +20,7 @@ input:focus {
 }
 
 .container {
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     padding: 5%;
     padding-top: 100px;
@@ -30,6 +30,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    
 }
 
 

@@ -35,3 +35,14 @@
 .Navbar .links div {
     cursor: pointer;
 }
+
+
+.Navbar #log {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+.Navbar #log div:first-of-type {
+    color: rgba(221, 221, 221, 0.7);
+    cursor: default;
+}
