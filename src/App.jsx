@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Login from './components/Login/Login';
 import Loged from './components/Loged/Loged';
 import Products from './components/Products/Products';
+import UniqueProduct from './components/UniqueProduct/UniqueProduct';
 
 import { useSelector } from 'react-redux';
 
@@ -28,6 +29,10 @@ function App() {
     {
       path:"/:location",
       element: <Products/>
+    },
+    {
+      path:"/:location/:id",
+      element: <UniqueProduct/>
     },
 
   ])
