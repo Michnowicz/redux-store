@@ -13,25 +13,17 @@
     color: white;
 }
 
-
-
-
-.burgerButton i {
-    height: 26px;
-    width: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 4px;
-    cursor: pointer;
+.Navbar .logo img {
+    height: 25px;
 }
 .Navbar .links {
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
+
 .Navbar .links div {
     cursor: pointer;
 }
@@ -53,4 +45,32 @@
 .Navbar #log p {
     color: rgba(221, 221, 221, 0.7);
     cursor: default;
+}
+
+
+
+.burgerButton i {
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.burgerButton .linksBurger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    right: 0%;
+}
+.linksBurger div {
+    cursor: pointer;
+}
+.linksBurger #log {
+    margin-top: 20px;
 }
