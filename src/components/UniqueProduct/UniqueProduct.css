@@ -25,3 +25,34 @@
     align-self: center;
     width: 200px;
 }
+
+
+
+@media (min-width: 768px) {
+    .UniqueProduct .container {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .UniqueProduct .imgDiv {
+        width: 70%;
+    }
+    .UniqueProduct .imgDiv div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+
+    .UniqueProduct .textDiv {
+        width: 30%;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .UniqueProduct .textDiv p {
+        margin-bottom: 80px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+}

@@ -25,8 +25,8 @@ export default function Navbar() {
                 <img src={logo} alt="" />
             </div>
 
-            <div className="linkDiv">
-                {/* <div className="links">
+            <div className="linkDiv linkMedia">
+                <div className="links">
                     <div id='products' onClick={handleNav}>PRODUCTS</div>
                     <div id='guitar' onClick={handleNav}>GUITAR</div>
                     <div id='string' onClick={handleNav}>STRING</div>
@@ -36,14 +36,17 @@ export default function Navbar() {
                 </div>
 
                 <div id="log">
+                    <div className="NavBasket">
+                        <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
+                    </div>
                     <p>{flag ? "Loged" : ""}</p>
                     <div id='login' onClick={handleNav}>LOG IN</div>
                     {flag ? <div onClick={()=>dispatch(handleDisconnect())}>LOG OUT</div> : ""}
-                </div> */}
+                </div>
                 
             </div>
 
-            <div className="buttons">
+            <div className="buttons btnMedia">
                 <div className="NavBasket">
                     <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
                 </div>

@@ -12,14 +12,19 @@
     background-color: #1c1c1c;
     color: white;
 }
+.linkDiv {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 
 .Navbar .logo img {
     height: 25px;
 }
 .Navbar .links {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
 }
 
@@ -40,7 +45,9 @@
 .Navbar #log div {
     cursor: pointer;
 }
-
+.Navbar #log i {
+    margin-right: 40px;
+}
 .Navbar #log p {
     color: rgba(221, 221, 221, 0.7);
     cursor: default;
@@ -76,4 +83,21 @@
 }
 .linksBurger #log {
     margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .linkMedia {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* .linkMedia {
+        display: contents;
+    } */
+
+    .btnMedia {
+        display: none;
+    }
 }
