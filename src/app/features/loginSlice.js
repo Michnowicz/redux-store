@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { useNavigate } from 'react-router-dom'
+import Data from "../../json/products.json"
 
 export const loginSlice = createSlice({
     name: 'login',
@@ -15,6 +16,8 @@ export const loginSlice = createSlice({
         ],
         total: 0,
         location: '',
+        carousel:[],
+        carID:0,
     },
     reducers: {
         addMail: (state, action) => {
@@ -70,11 +73,51 @@ export const loginSlice = createSlice({
             state.cart.forEach(c => {
                 state.total += c.quantity * c.price
             });
+        },
+        addCarousel: (state) => {
+            const randList = []    
+
+            while (state.carousel.length < 5) {
+                let random = Math.floor(Math.random()*Data.length)
+                let different = true
+                if (state.carousel.length==0) {
+                    randList.push(random)
+                    state.carousel.push(Data[random])
+                } 
+                else {
+                    randList.forEach(r =>{
+                        if (r == random) {
+                            different = false
+                        }
+                    })
+                    if (different == true) {
+                        randList.push(random)
+                        state.carousel.push(Data[random])
+                    }
+                }
+            }
+        },
+        changeCarID: (state, action) => {
+            if (action.payload == "prev") {
+                if (state.carID > 0) {
+                    state.carID -= 1
+                } else {
+                    state.carID = 4
+                }
+                
+            }
+            if (action.payload == "next") {
+                if (state.carID < 4) {
+                    state.carID += 1
+                } else {
+                    state.carID = 0
+                }
+            }
         }
     }
 })
 
 // Action creators are generated for each case reducer function
-export const { addMail, addPassword, handleConnection, handleLocation, handleDisconnect, handleAddtoCart, plusOne, minusOne, removeFromCart, getTotal } = loginSlice.actions
+export const { addMail, addPassword, handleConnection, handleLocation, handleDisconnect, handleAddtoCart, plusOne, minusOne, removeFromCart, getTotal, addCarousel, changeCarID } = loginSlice.actions
 
 export default loginSlice.reducer

@@ -1,5 +1,6 @@
 import "./Datas.css"
 import Data from "../../json/products.json"
+import Carousel from "../Carousel/Carousel"
 
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
@@ -23,9 +24,9 @@ export default function Datas({location}) {
             const newFiltered = Data.filter(d => d.category == location)
             setFiltered(newFiltered)
         } else {
-            const newFiltered = Data.map((d,i)=>{
-                return d
-            })
+            // const newFiltered = Data.map((d,i)=>{
+            //     return d
+            // })
             setFiltered(Data)
         }
         
@@ -49,6 +50,8 @@ export default function Datas({location}) {
     return(
 
         <div className="container">
+
+            {location == "products" ? <Carousel/> : location == undefined ? <Carousel/> : ""}
                 
             <input className="searchBar" type="text" placeholder="search by name" onChange={(e) => (setSearch(e.target.value.toLowerCase()))}/>
 

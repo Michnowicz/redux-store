@@ -1,5 +1,7 @@
 
-
+.searchBar {
+    margin-top: 40px;
+}
 
 .datas {
     display: flex;
