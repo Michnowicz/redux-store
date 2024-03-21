@@ -1,0 +1,8 @@
+
+
+.UniqueProduct .imgDiv div:first-of-type h1 {
+    
+}
+.UniqueProduct .imgDiv div:last-of-type img {
+    width: 300px;
+}

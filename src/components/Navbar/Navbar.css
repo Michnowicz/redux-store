@@ -36,13 +36,21 @@
     cursor: pointer;
 }
 
+.Navbar .NavBasket i {
+    cursor: pointer;
+}
+
 
 .Navbar #log {
     display: flex;
     gap: 10px;
     margin-left: 20px;
 }
-.Navbar #log div:first-of-type {
+.Navbar #log div {
+    cursor: pointer;
+}
+
+.Navbar #log p {
     color: rgba(221, 221, 221, 0.7);
     cursor: default;
 }

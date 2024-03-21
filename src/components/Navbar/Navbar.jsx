@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom"
 import "./Navbar.css"
 import { useSelector, useDispatch } from "react-redux"
-import { handleLocation } from "../../app/features/loginSlice"
+import { handleLocation, handleDisconnect } from "../../app/features/loginSlice"
 import { useEffect } from "react"
 
 export default function Navbar() {
     
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const test = useSelector((state) => state.login.connection.flag)
+    const flag = useSelector((state) => state.login.connection.flag)
 
     // useEffect(()=>{
     //     console.log(location);
@@ -25,16 +25,24 @@ export default function Navbar() {
                 logo
             </div> */}
 
-            <div className="links">
-                <div id='products' onClick={handleNav}>PRODUCTS</div>
-                <div id='guitar' onClick={handleNav}>GUITAR</div>
-                <div id='string' onClick={handleNav}>STRING</div>
-                <div id='pedal' onClick={handleNav}>PEDAL</div>
-                <div id='amp' onClick={handleNav}>AMP</div>
-                <div id='tuner' onClick={handleNav}>TUNER</div>
+            <div className="linkDiv">
+                <div className="links">
+                    <div id='products' onClick={handleNav}>PRODUCTS</div>
+                    <div id='guitar' onClick={handleNav}>GUITAR</div>
+                    <div id='string' onClick={handleNav}>STRING</div>
+                    <div id='pedal' onClick={handleNav}>PEDAL</div>
+                    <div id='amp' onClick={handleNav}>AMP</div>
+                    <div id='tuner' onClick={handleNav}>TUNER</div>
+                </div>
+
                 <div id="log">
-                    <div>{test == false ? "" : "Loged"}</div>
+                    <div className="NavBasket">
+                        <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
+                    </div>
+
+                    <p>{flag ? "Loged" : ""}</p>
                     <div id='login' onClick={handleNav}>LOG IN</div>
+                    {flag ? <div onClick={()=>dispatch(handleDisconnect())}>LOG OUT</div> : ""}
                 </div>
                 
             </div>

@@ -5,6 +5,7 @@ import Login from './components/Login/Login';
 import Loged from './components/Loged/Loged';
 import Products from './components/Products/Products';
 import UniqueProduct from './components/UniqueProduct/UniqueProduct';
+import Cart from './components/Cart/Cart';
 
 import { useSelector } from 'react-redux';
 
@@ -33,6 +34,10 @@ function App() {
     {
       path:"/:location/:id",
       element: <UniqueProduct/>
+    },
+    {
+      path:"/cart",
+      element: <Cart/>
     },
 
   ])

@@ -14,7 +14,7 @@ export default function UniqueProduct() {
             <Navbar/>
                 {
                     Data.filter(p => p.id == id).map((d,i)=>(
-                        <div id={i} className="container">
+                        <div key={i} className="container">
                             <div className='imgDiv'>
                                 <div>
                                     <h1>{d.name}</h1>
@@ -23,6 +23,7 @@ export default function UniqueProduct() {
                                     <img src={d.image} alt="" />
                                 </div>
                             </div>
+                            
                             <div className='textDiv'>
 
                             </div>
