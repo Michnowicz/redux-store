@@ -5,7 +5,8 @@
         "price": 2899.99,
         "quantity": 3,
         "image": "/public/image/guitar/strandberg-plini.jpg",
-        "category": "guitar"
+        "category": "guitar",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "G02",
@@ -13,7 +14,8 @@
         "price": 910.99,
         "quantity": 4,
         "image": "/public/image/guitar/Epiphone-Noel-Gallagher-Riviera.jpg",
-        "category": "guitar"
+        "category": "guitar",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "G03",
@@ -21,7 +23,8 @@
         "price": 1899.00,
         "quantity": 2,
         "image": "/public/image/guitar/yamaha-revstar.jpg",
-        "category": "guitar"
+        "category": "guitar",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "G04",
@@ -29,7 +32,8 @@
         "price": 799,
         "quantity": 5,
         "image": "/public/image/guitar/Gretsch-G5422TG.jpg",
-        "category": "guitar"
+        "category": "guitar",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "G05",
@@ -37,7 +41,8 @@
         "price": 599,
         "quantity": 5,
         "image": "/public/image/guitar/fender-tom-delonge.jpg",
-        "category": "guitar"
+        "category": "guitar",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
 
 
@@ -47,7 +52,8 @@
         "price": 17.99,
         "quantity": 20,
         "image": "/public/image/strings/Daddario-NYXL.jpg",
-        "category": "string"
+        "category": "string",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "S02",
@@ -55,7 +61,8 @@
         "price": 11.90,
         "quantity": 20,
         "image": "/public/image/strings/elixir.jpg",
-        "category": "string"
+        "category": "string",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "S03",
@@ -63,7 +70,8 @@
         "price": 7.20,
         "quantity": 15,
         "image": "/public/image/strings/EBF.png",
-        "category": "string"
+        "category": "string",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "S04",
@@ -71,7 +79,8 @@
         "price": 5.00,
         "quantity": 33,
         "image": "/public/image/strings/HB.jpg",
-        "category": "string"
+        "category": "string",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "S05",
@@ -79,7 +88,8 @@
         "price": 12.70,
         "quantity": 12,
         "image": "/public/image/strings/elixir.jpg",
-        "category": "string"
+        "category": "string",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
 
 
@@ -90,7 +100,8 @@
         "price": 110.80,
         "quantity": 10,
         "image": "/public/image/pedal/Boss-disto.jpg",
-        "category": "pedal"
+        "category": "pedal",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "P02",
@@ -106,7 +117,8 @@
         "price": 28.45,
         "quantity": 6,
         "image": "/public/image/pedal/behringer-chorus.jpg",
-        "category": "pedal"
+        "category": "pedal",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "P04",
@@ -114,7 +126,8 @@
         "price": 80.30,
         "quantity": 4,
         "image": "/public/image/pedal/TC-drip.jpg",
-        "category": "pedal"
+        "category": "pedal",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "P05",
@@ -122,7 +135,8 @@
         "price": 587.00,
         "quantity": 4,
         "image": "./public/image/pedal/boss-looper.jpg",
-        "category": "pedal"
+        "category": "pedal",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
 
 
@@ -133,7 +147,8 @@
         "price": 60.00,
         "quantity": 10,
         "image": "/public/image/tuner/Mooer-Baby-Tuner.jpg",
-        "category": "tuner"
+        "category": "tuner",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "T02",
@@ -141,7 +156,8 @@
         "price": 24.30,
         "quantity": 23,
         "image": "/public/image/tuner/Boss TU-30.jpg",
-        "category": "tuner"
+        "category": "tuner",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "T03",
@@ -149,7 +165,8 @@
         "price": 5.89,
         "quantity": 45,
         "image": "/public/image/tuner/ht-15.jpg",
-        "category": "tuner"
+        "category": "tuner",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "T04",
@@ -157,7 +174,8 @@
         "price": 14.13,
         "quantity": 40,
         "image": "/public/image/tuner/korg-CA2.jpg",
-        "category": "tuner"
+        "category": "tuner",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "T05",
@@ -165,7 +183,8 @@
         "price": 21.22,
         "quantity": 26,
         "image": "/public/image/tuner/Snark-SN5X.jpg",
-        "category": "tuner"
+        "category": "tuner",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
 
 
@@ -176,7 +195,8 @@
         "price":  96.59,
         "quantity": 20,
         "image": "/public/image/amp/Boss-Katana.jpg",
-        "category": "amp"
+        "category": "amp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "A02",
@@ -184,7 +204,8 @@
         "price": 192.25,
         "quantity": 6,
         "image": "/public/image/amp/Fender-LT25.jpg",
-        "category": "amp"
+        "category": "amp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "A03",
@@ -192,7 +213,8 @@
         "price": 226.75,
         "quantity": 9,
         "image": "/public/image/amp/blackstar.jpg",
-        "category": "amp"
+        "category": "amp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "A04",
@@ -200,7 +222,8 @@
         "price": 589.00,
         "quantity": 3,
         "image": "/public/image/amp/EVH-5150-III.jpg",
-        "category": "amp"
+        "category": "amp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     },
     {
         "id": "A05",
@@ -208,6 +231,7 @@
         "price": 196.00,
         "quantity": 17,
         "image": "/public/image/amp/Line-6.jpg",
-        "category": "amp"
+        "category": "amp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque voluptates magnam cum unde amet, suscipit inventore error dignissimos culpa."
     }
 ]

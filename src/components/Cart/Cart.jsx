@@ -15,7 +15,7 @@ export default function Cart() {
         dispatch(getTotal())
     },[cart])
 
-
+    
     return(
         <div className="Cart supraContainer">
             <Navbar/>

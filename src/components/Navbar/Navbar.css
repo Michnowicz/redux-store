@@ -27,7 +27,6 @@
 .Navbar .links div {
     cursor: pointer;
 }
-
 .Navbar .NavBasket i {
     cursor: pointer;
 }
@@ -47,7 +46,11 @@
     cursor: default;
 }
 
-
+.buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
 .burgerButton i {
     height: 26px;

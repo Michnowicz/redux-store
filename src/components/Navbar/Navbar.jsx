@@ -36,10 +36,6 @@ export default function Navbar() {
                 </div>
 
                 <div id="log">
-                    <div className="NavBasket">
-                        <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
-                    </div>
-
                     <p>{flag ? "Loged" : ""}</p>
                     <div id='login' onClick={handleNav}>LOG IN</div>
                     {flag ? <div onClick={()=>dispatch(handleDisconnect())}>LOG OUT</div> : ""}
@@ -47,26 +43,30 @@ export default function Navbar() {
                 
             </div>
 
-            <div className="burgerButton">
-                <i className="fa-solid fa-bars" onClick={()=>{setShown(!shown)}}></i>
-                <div className={shown ? "linksBurger" : "hidden"} >
-                    <div id='products' onClick={handleNav}>PRODUCTS</div>
-                    <div id='guitar' onClick={handleNav}>GUITAR</div>
-                    <div id='string' onClick={handleNav}>STRING</div>
-                    <div id='pedal' onClick={handleNav}>PEDAL</div>
-                    <div id='amp' onClick={handleNav}>AMP</div>
-                    <div id='tuner' onClick={handleNav}>TUNER</div>
-                    <div id="log">
-                        <div className="NavBasket">
-                            <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
-                        </div>
+            <div className="buttons">
+                <div className="NavBasket">
+                    <i className="fa-solid fa-cart-shopping" id="cart" onClick={handleNav}></i>
+                </div>
 
-                        <p>{flag ? "Loged" : ""}</p>
-                        <div id='login' onClick={handleNav}>LOG IN</div>
-                        {flag ? <div onClick={()=>dispatch(handleDisconnect())}>LOG OUT</div> : ""}
+                <div className="burgerButton">
+                    <i className="fa-solid fa-bars" onClick={()=>{setShown(!shown)}}></i>
+                    <div className={shown ? "linksBurger" : "hidden"} >
+                        <div id='products' onClick={handleNav}>PRODUCTS</div>
+                        <div id='guitar' onClick={handleNav}>GUITAR</div>
+                        <div id='string' onClick={handleNav}>STRING</div>
+                        <div id='pedal' onClick={handleNav}>PEDAL</div>
+                        <div id='amp' onClick={handleNav}>AMP</div>
+                        <div id='tuner' onClick={handleNav}>TUNER</div>
+                        <div id="log">
+                            
+                            <p>{flag ? "Loged" : ""}</p>
+                            <div id='login' onClick={handleNav}>LOG IN</div>
+                            {flag ? <div onClick={()=>dispatch(handleDisconnect())}>LOG OUT</div> : ""}
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
     )
